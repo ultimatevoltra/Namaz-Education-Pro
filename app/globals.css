@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,sans-serif;background:#040d1a;color:#e8e8e8;min-height:100vh;overflow-x:hidden}
+.font-arabic{font-family:'Amiri',serif;direction:rtl}
+.geo-bg{background-image:url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cpolygon points='40,4 76,22 76,58 40,76 4,58 4,22' stroke='%23c9a22710' stroke-width='1'/%3E%3Cpolygon points='40,16 64,28 64,52 40,64 16,52 16,28' stroke='%231a6b4a0a' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E")}
+.card{background:rgba(255,255,255,0.04);backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,0.08);border-radius:20px}
+.card-gold{background:linear-gradient(135deg,rgba(201,162,39,0.1),rgba(201,162,39,0.03));border:1px solid rgba(201,162,39,0.22);border-radius:20px}
+.card-emerald{background:linear-gradient(135deg,rgba(26,107,74,0.18),rgba(10,54,34,0.12));border:1px solid rgba(26,107,74,0.28);border-radius:20px}
+.text-gold{background:linear-gradient(135deg,#c9a227,#f0d060,#c9a227);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.glow-gold{box-shadow:0 0 30px rgba(201,162,39,0.25)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
+@keyframes pulseGold{0%,100%{box-shadow:0 0 0 0 rgba(201,162,39,0.4)}50%{box-shadow:0 0 0 14px rgba(201,162,39,0)}}
+.anim-up{animation:fadeUp 0.55s ease forwards}
+.pulse-gold{animation:pulseGold 2.2s ease-in-out infinite}
+.btn-primary{background:linear-gradient(135deg,#1a6b4a,#0a3622);border:1px solid rgba(201,162,39,0.38);color:#f0d060;border-radius:14px;padding:12px 24px;font-weight:600;cursor:pointer;transition:all 0.2s}
+.btn-primary:hover{filter:brightness(1.15)}
+.btn-gold{background:linear-gradient(135deg,#c9a227,#a07d1a);color:#040d1a;border-radius:14px;padding:12px 28px;font-weight:700;cursor:pointer;border:none;transition:all 0.2s}
+.btn-gold:hover{filter:brightness(1.1);transform:translateY(-1px)}
+nav.btm{position:fixed;bottom:0;left:0;right:0;background:rgba(4,13,26,0.94);backdrop-filter:blur(24px);border-top:1px solid rgba(255,255,255,0.06);z-index:1000;padding-bottom:env(safe-area-inset-bottom,8px)}
+.tasbih-btn{width:190px;height:190px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#2a8a62,#0a3622);border:4px solid #c9a227;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;transition:transform 0.1s;user-select:none;box-shadow:0 8px 40px rgba(201,162,39,0.22)}
+.tasbih-btn:active{transform:scale(0.93)}
+.skeleton{background:linear-gradient(90deg,rgba(255,255,255,0.04) 25%,rgba(255,255,255,0.09) 50%,rgba(255,255,255,0.04) 75%);background-size:200% 100%;animation:shimmer 1.5s infinite;border-radius:10px}
+.prayer-active{background:linear-gradient(135deg,rgba(201,162,39,0.14),rgba(201,162,39,0.04));border:1px solid rgba(201,162,39,0.32)}
+.ayah-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:20px;transition:all 0.2s}
+.ayah-card:hover{background:rgba(201,162,39,0.06);border-color:rgba(201,162,39,0.2)}
+::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:rgba(201,162,39,0.2);border-radius:2px}
