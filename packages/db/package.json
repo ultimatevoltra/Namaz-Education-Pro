@@ -1,1 +1,11 @@
-{"name": "@namaz/db","version": "1.0.0","private": true,"exports": {".": "./index.js"}}
+{
+  "name": "@namaz/db",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@prisma/client": "latest"
+  },
+  "exports": {
+    ".": "./index.js"
+  }
+}
