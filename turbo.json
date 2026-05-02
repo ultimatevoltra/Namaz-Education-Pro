@@ -1,5 +1,12 @@
 {
   "$schema": "https://turbo.build/json-schema.json",
+  "globalEnv": [
+    "DATABASE_URL",
+    "NEXTAUTH_SECRET",
+    "NEXTAUTH_URL",
+    "NEXT_PUBLIC_API_URL",
+    "BLOB_READ_WRITE_TOKEN"
+  ],
   "tasks": {
     "dev": {
       "cache": false,
@@ -11,6 +18,7 @@
       ],
       "outputs": [
         ".next/**",
+        "!.next/cache/**",
         "dist/**"
       ]
     },
