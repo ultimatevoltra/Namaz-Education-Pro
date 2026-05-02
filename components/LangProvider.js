@@ -1,11 +1,11 @@
 'use client';
 import { createContext, useContext, useState, useEffect } from 'react';
 import translations from '../lib/i18n';
-const LangCtx = createContext({ lang: 'en', t: k => k, toggle: () => {} });
+const LangCtx = createContext({ lang: 'bn', t: k => k, toggle: () => {} });
 export function LangProvider({ children }) {
-  const [lang, setLang] = useState('en');
+  const [lang, setLang] = useState('bn');
   useEffect(() => {
-    const saved = localStorage.getItem('np_lang') || 'en';
+    const saved = localStorage.getItem('np_lang') || 'bn';
     setLang(saved);
   }, []);
   function toggle() {
