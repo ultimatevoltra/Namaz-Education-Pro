@@ -1,1 +1,15 @@
-{"name": "@namaz/auth","version": "1.0.0","private": true,"exports": {".": "./index.js","./react": "./react.js"}}
+{
+  "name": "@namaz/auth",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "next-auth": "latest",
+    "@auth/prisma-adapter": "latest",
+    "bcryptjs": "latest",
+    "@namaz/db": "*"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./react": "./react.js"
+  }
+}
